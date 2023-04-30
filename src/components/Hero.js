@@ -7,7 +7,7 @@ class Hero extends React.Component {
         return (
             <section className="hero">
                 <img src={image} className="hero--image" alt="shop" />
-                <h3 className="hero--title">Level Two Queen Victoria Building Sydney</h3>
+                <h4 className="hero--title">Level Two Queen Victoria Building Sydney</h4>
                 <p className="hero--description">Open Tuesday - Sunday, 11am - 5pm</p>
             </section>
         )

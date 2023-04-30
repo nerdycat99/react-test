@@ -43,14 +43,18 @@ code {
   letter-spacing: -0.03em;
 }
 
+.navbar--link {
+  margin-top: 0px;
+}
+
 .hero {
-  padding-top: 20px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
 }
 
 .hero--image {
-  max-width: 700px;
+  max-width: 600px;
   align-self: center;
 }
 
@@ -59,7 +63,7 @@ code {
   color: grey;
   font-weight: 700;
   letter-spacing: -0.02em;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
