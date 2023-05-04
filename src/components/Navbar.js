@@ -14,7 +14,7 @@ class Navbar extends React.Component {
                 &nbsp; &nbsp;
                 <h4 className="navbar--item">Contact</h4>
                 &nbsp; &nbsp;
-                <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Cat" className="navbar--link"><img src={insta} className="navbar--insta" alt="logo" /></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/australianglass_sydney/" className="navbar--link"><img src={insta} className="navbar--insta" alt="logo" /></a>
                 {/* <img src={insta} className="navbar--insta" alt="logo" /> */}
             </nav>
         )
