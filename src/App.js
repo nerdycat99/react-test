@@ -2,7 +2,7 @@
 import './App.css';
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
-import React,  { Component } from 'react'
+// import React,  { Component } from 'react'
 
 function App() {
   return (
