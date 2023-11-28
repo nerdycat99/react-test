@@ -25,9 +25,7 @@ export default function ContactPane() {
             <div class='column'>
               <div class='centered contact-text'>
                 <h3>visit us</h3>
-                <p>Shop 9</p>
-                <p>601 Military Road</p>
-                <p>Mosman 2088 NSW</p>
+                <p>{'Shop 9\n601 Military Road\nMosman 2088\nNSW'}</p>
               </div>
             </div>
             <div class='column'>

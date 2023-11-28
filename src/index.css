@@ -250,7 +250,7 @@ main {
 
 .workshop-image {
   @media (max-width: 767px) {
-    width: 500px;
+    width: 400px;
     height: auto;
   }
 }
@@ -277,7 +277,8 @@ main {
 }
 
 .contact-text {
-  line-height: 1;
+  line-height: 1.23;
+  white-space: pre-wrap;
 }
 
 .image-footer-text {

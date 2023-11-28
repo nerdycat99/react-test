@@ -60,7 +60,7 @@ export const SMALL_CAROUSEL_IMAGES = [
   {
     idx: 6,
     image: bowl,
-    title: 'Blue Hakea Seed & Stamen Bowl\nby Jenni Kemarre Martiniello',
+    title: 'Blue Hakea Seed\nand Stamen Bowl\nby Jenni Kemarre Martiniello',
     description:
       'This is a description of image C',
   },
