@@ -62,6 +62,10 @@
   white-space: pre-wrap;
 }
 
+.slide-text-dark {
+  color: rgb(60, 60, 68);
+}
+
 .small-slide-text {
   font-weight: 100;
   font-size: 28px;
@@ -75,4 +79,8 @@
   height: fit-content;
   margin: auto;
   white-space: pre-wrap;
+}
+
+.small-slide-text-dark {
+  color: rgb(60, 60, 68);
 }

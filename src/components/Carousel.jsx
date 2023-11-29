@@ -21,13 +21,13 @@ export default function Carousel() {
         {CAROUSEL_IMAGES.map((item) => {
           return <img src={item.image} key={item.idx} className={item.idx === currentItem ? 'slide' : 'slide slide-hidden'} alt='...' />
         })}
-        <p className='slide-text'>{CAROUSEL_IMAGES[currentItem].title}</p>
+        <p className={CAROUSEL_IMAGES[currentItem].darkText === 'true' ? 'slide-text slide-text-dark' : 'slide-text'}>{CAROUSEL_IMAGES[currentItem].title}</p>
       </div>
       <div className='small-carousel'>
         {SMALL_CAROUSEL_IMAGES.map((item) => {
           return <img src={item.image} key={item.idx} className={item.idx === currentSmallItem ? 'slide' : 'slide slide-hidden'} alt='...' />
         })}
-        <h1 className='small-slide-text'>{SMALL_CAROUSEL_IMAGES[currentSmallItem].title}</h1>
+        <h1 className={SMALL_CAROUSEL_IMAGES[currentSmallItem].darkText === 'true' ? 'small-slide-text small-slide-text-dark' : 'small-slide-text'}>{SMALL_CAROUSEL_IMAGES[currentSmallItem].title}</h1>
       </div>
     </article> 
   )
