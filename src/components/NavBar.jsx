@@ -1,26 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import logo from '../assets/ag_logo.png';
-
-import menu from '../assets/hamburger.png';
-
-// export default function Navbar() {
-//   return (
-//     <nav className="navbar">
-//       <img src={menu} className="navbar--logo-text navbar-left-icon" alt="menu" />
-//       <p className="navbar--item-left">Products</p>
-//       {/* <p className="navbar--logo-text">Products Artists</p> */}
-//       <img src={logo} className="navbar--logo" alt="logo" /> 
-//       <h1 className="navbar--logo-text">Australian Glass - Arts & Gifts</h1>
-//       <h4 className="navbar--item">About</h4>
-//       &nbsp; &nbsp;
-//       <h4 className="navbar--item">Contact</h4>
-//       &nbsp; &nbsp;
-//       {/* <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/australianglass_sydney/" className="navbar--link"><img src={insta} className="navbar--insta" alt="logo" /></a> */}
-//     </nav>
-//   )
-// }
+import australianGlassArtsAndGiftsLogo from '../assets/australian_glass_arts_and_gifts_logo.png';
 
 const Nav = styled.nav`
   position: fixed;
@@ -94,28 +75,69 @@ const MobileNav = styled.ul`
   }
 `;
 
+const homeNavigationElementStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "SiteNavigationElement",
+  name: "Home",
+  url: "/",
+  description: "Home page for unique glass art works by leading Australian and New Zealand glass artists.",
+};
+
+const contactNavigationElementStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "SiteNavigationElement",
+  name: "Contact",
+  url: "/contact",
+  description: "Contact Australian Glass Art and Gifts to find out more about unique glass art works by leading Australian and New Zealand glass artists.",
+};
+
+const designersNavigationElementStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "SiteNavigationElement",
+  name: "Designers",
+  url: "/designers",
+  description: "Find out more about the leading Australian and New Zealand glass artists whose work is sold by Australian Glass Art and Gifts.",
+};
+
+const productsNavigationElementStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "SiteNavigationElement",
+  name: "Products",
+  url: "/products",
+  description: "See the unique Australian and New Zealand glass art works and products sold by Australian Glass Art and Gifts.",
+};
+
 const NavBar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false);
 
   return (
     <Nav>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(homeNavigationElementStructuredData),
+          __html: JSON.stringify(contactNavigationElementStructuredData),
+          __html: JSON.stringify(productsNavigationElementStructuredData),
+          __html: JSON.stringify(designersNavigationElementStructuredData),
+        }}
+      />
       <Logo>
-        <img src={logo} className="navbar--logo" alt="logo" /> 
+        <img src={australianGlassArtsAndGiftsLogo} className="navbar--logo" alt="Australian Glass Art and Gifts Logo" /> 
       </Logo>
       <MobileNavToggle onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
         {isMobileNavOpen ? '' : '='}
       </MobileNavToggle>
       <DesktopNav>
-        <NavItem><a href="/">Home</a></NavItem>
-        <NavItem><a href="/products">Products</a></NavItem>
-        <NavItem><a href="/designers">Designers</a></NavItem>
-        <NavItem><a href="/contact">Contact</a></NavItem>
+        <NavItem><a href={homeNavigationElementStructuredData.url}>{homeNavigationElementStructuredData.name}</a></NavItem>
+        <NavItem><a href={productsNavigationElementStructuredData.url}>{productsNavigationElementStructuredData.name}</a></NavItem>
+        <NavItem><a href={designersNavigationElementStructuredData.url}>{designersNavigationElementStructuredData.name}</a></NavItem>
+        <NavItem><a href={contactNavigationElementStructuredData.url}>{contactNavigationElementStructuredData.name}</a></NavItem>
       </DesktopNav>
       <MobileNav style={{ display: isMobileNavOpen ? 'flex' : 'none' }}>
-        <NavItem><a href="/">Home</a></NavItem>
-        <NavItem><a href="/products">Products</a></NavItem>
-        <NavItem><a href="designers">Designers</a></NavItem>
-        <NavItem><a href="/contact">Contact</a></NavItem>
+        <NavItem><a href={homeNavigationElementStructuredData.url}>{homeNavigationElementStructuredData.name}</a></NavItem>
+        <NavItem><a href={productsNavigationElementStructuredData.url}>{productsNavigationElementStructuredData.name}</a></NavItem>
+        <NavItem><a href={designersNavigationElementStructuredData.url}>{designersNavigationElementStructuredData.name}</a></NavItem>
+        <NavItem><a href={contactNavigationElementStructuredData.url}>{contactNavigationElementStructuredData.name}</a></NavItem>
       </MobileNav>
     </Nav>
   );
