@@ -276,6 +276,18 @@ main {
   }
 }
 
+.contact-blocks-bottom-margin {
+  margin-bottom: 0px;
+}
+
+.contact-block-icons-bottom-margin {
+  margin-bottom: 6px;
+}
+
+.contact-blocks-top-margin {
+  margin-top: 4px;
+}
+
 .contact-text {
   line-height: 1.23;
   white-space: pre-wrap;
@@ -294,7 +306,7 @@ main {
   line-height: 1;
 }
 
-.insta-link {
-  height: 16px;
+.social-media-link {
+  padding: 0px;
+  height: 20px;
 }
-
