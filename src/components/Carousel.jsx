@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CAROUSEL_IMAGES, SMALL_CAROUSEL_IMAGES } from '../data.js'
+import {Helmet} from "react-helmet";
+import tulipVaseByPeterNilssonCrimpleVaseByMattCurtisEclipseVaseByHoglundArtGlass from '../assets/tulip-vase-by-peter-nilsson-crimple-vase-by-matt-curtis-eclipse-vase-by-hoglund-art-glass.webp';
 import './Carousel.css'
 
 export default function Carousel() {
@@ -16,19 +18,24 @@ export default function Carousel() {
 }, [])
 
   return (
-    <article className='article'>
-      <div className='carousel'>
-        {CAROUSEL_IMAGES.map((item) => {
-          return <img src={item.image} key={item.idx} className={item.idx === currentItem ? 'slide' : 'slide slide-hidden'} alt={item.description} />
-        })}
-        <p className={CAROUSEL_IMAGES[currentItem].darkText === 'true' ? 'slide-text slide-text-dark' : 'slide-text'}>{CAROUSEL_IMAGES[currentItem].title}</p>
-      </div>
-      <div className='small-carousel'>
-        {SMALL_CAROUSEL_IMAGES.map((item) => {
-          return <img src={item.image} key={item.idx} className={item.idx === currentSmallItem ? 'slide' : 'slide slide-hidden'} alt={item.description} />
-        })}
-        <h1 className={SMALL_CAROUSEL_IMAGES[currentSmallItem].darkText === 'true' ? 'small-slide-text small-slide-text-dark' : 'small-slide-text'}>{SMALL_CAROUSEL_IMAGES[currentSmallItem].title}</h1>
-      </div>
-    </article> 
+    <>
+      <Helmet>
+        <link rel="preload" as="image" href={tulipVaseByPeterNilssonCrimpleVaseByMattCurtisEclipseVaseByHoglundArtGlass} />
+      </Helmet>
+      <article className='article'>
+        <div className='carousel'>
+          {CAROUSEL_IMAGES.map((item) => {
+            return <img src={item.image} key={item.idx} className={item.idx === currentItem ? 'slide' : 'slide slide-hidden'} alt={item.description} />
+          })}
+          <p className={CAROUSEL_IMAGES[currentItem].darkText === 'true' ? 'slide-text slide-text-dark' : 'slide-text'}>{CAROUSEL_IMAGES[currentItem].title}</p>
+        </div>
+        <div className='small-carousel'>
+          {SMALL_CAROUSEL_IMAGES.map((item) => {
+            return <img src={item.image} key={item.idx} className={item.idx === currentSmallItem ? 'slide' : 'slide slide-hidden'} alt={item.description} />
+          })}
+          <h1 className={SMALL_CAROUSEL_IMAGES[currentSmallItem].darkText === 'true' ? 'small-slide-text small-slide-text-dark' : 'small-slide-text'}>{SMALL_CAROUSEL_IMAGES[currentSmallItem].title}</h1>
+        </div>
+      </article>
+    </>
   )
 }

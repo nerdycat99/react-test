@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import australianGlassArtsAndGiftsLogo from '../assets/australian_glass_arts_and_gifts_logo.png';
+import australianGlassArtsAndGiftsLogo from '../assets/australian_glass_arts_and_gifts_logo.webp';
 
 const Nav = styled.nav`
   position: fixed;
@@ -122,7 +122,7 @@ const NavBar = () => {
         }}
       />
       <Logo>
-        <img src={australianGlassArtsAndGiftsLogo} className="navbar--logo" alt="Australian Glass Art and Gifts Logo" /> 
+        <img src={australianGlassArtsAndGiftsLogo} className="navbar--logo" alt="Australian Glass Art and Gifts Logo" width="240px" height="auto"/> 
       </Logo>
       <MobileNavToggle onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
         {isMobileNavOpen ? '' : '='}

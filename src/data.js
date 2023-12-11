@@ -1,19 +1,18 @@
-import variousGlassArtWorks from './assets/various-glass-art-works.jpg';
-import variousGlassArtWorksLarge from './assets/various-glass-art-works-large.jpg';
-import tulipVaseByPeterNilssonCrimpleVaseByMattCurtisEclipseVaseByHoglundArtGlassLarge from './assets/tulip-vase-by-peter-nilsson-crimple-vase-by-matt-curtis-eclipse-vase-by-hoglund-art-glass-large.jpg';
-import tulipVaseByPeterNilssonCrimpleVaseByMattCurtisEclipseVaseByHoglundArtGlass from './assets/tulip-vase-by-peter-nilsson-crimple-vase-by-matt-curtis-eclipse-vase-by-hoglund-art-glass.jpg';
-import glassBowlsByKeithRoweAndScottColemanLarge from './assets/glass-bowls-by-keith-rowe-and-scott-coleman-large.jpg';
-import glassBowlsByKeithRoweAndScottColeman from './assets/glass-bowls-by-keith-rowe-and-scott-coleman.jpg';
-import streamDecantersByBenEdolsLarge from './assets/stream-decanters-by-ben-edols-large.jpg';
-import streamDecantersByBenEdols from './assets/stream-decanters-by-ben-edols.jpg';
-import babyWombatByLunaRyanAndRippleBowlByScottColemanLarge from './assets/baby-wombat-by-luna-ryan-and-ripple-bowl-by-scott-coleman-large.jpeg';
-import babyWombatByLunaRyanAndRippleBowlByScottColeman from './assets/baby-wombat-by-luna-ryan-and-ripple-bowl-by-scott-coleman.jpeg';
-import steelAposematismAndLichenByJoBoneLarge from './assets/steel_aposematism_and_lichen_by_jo_bone-large.jpeg';
-import steelAposematismAndLichenByJoBone from './assets/steel_aposematism_and_lichen_by_jo_bone.jpeg';
-import tulipVaseByPeterNilssonAndUrbanVaseByKeithRoweAndRedMurriniBowlByBenEdolsLarge from './assets/tulip-vase-by-peter-nilsson-and-urban-vase-by-keith-rowe-and-red-murrini-bowl-by-ben-edols-large.jpg';
-import tulipVaseByPeterNilssonAndUrbanVaseByKeithRoweAndRedMurriniBowlByBenEdols from './assets/tulip-vase-by-peter-nilsson-and-urban-vase-by-keith-rowe-and-red-murrini-bowl-by-ben-edols.jpg';
-import blueHakeaSeedAndStamenBowlByJenniKemarreMartinielloLarge from './assets/blue-hakea-seed-and-stamen-bowl-by-jenni-kemarre-martiniello-large.jpg';
-import blueHakeaSeedAndStamenBowlByJenniKemarreMartiniello from './assets/blue-hakea-seed-and-stamen-bowl-by-jenni-kemarre-martiniello.jpg';
+import variousGlassArtWorks from './assets/various-glass-art-works.webp';
+import variousGlassArtWorksLarge from './assets/various-glass-art-works-large.webp';
+import tulipVaseByPeterNilssonCrimpleVaseByMattCurtisEclipseVaseByHoglundArtGlassLarge from './assets/tulip-vase-by-peter-nilsson-crimple-vase-by-matt-curtis-eclipse-vase-by-hoglund-art-glass-large.webp';
+import tulipVaseByPeterNilssonCrimpleVaseByMattCurtisEclipseVaseByHoglundArtGlass from './assets/tulip-vase-by-peter-nilsson-crimple-vase-by-matt-curtis-eclipse-vase-by-hoglund-art-glass.webp';
+import glassBowlsByKeithRoweAndScottColemanLarge from './assets/glass-bowls-by-keith-rowe-and-scott-coleman-large.webp';
+import glassBowlsByKeithRoweAndScottColeman from './assets/glass-bowls-by-keith-rowe-and-scott-coleman.webp';
+import streamDecantersByBenEdolsLarge from './assets/stream-decanters-by-ben-edols-large.webp';
+import streamDecantersByBenEdols from './assets/stream-decanters-by-ben-edols.webp';
+import babyWombatByLunaRyanAndRippleBowlByScottColemanLarge from './assets/baby-wombat-by-luna-ryan-and-ripple-bowl-by-scott-coleman-large.webp';
+import babyWombatByLunaRyanAndRippleBowlByScottColeman from './assets/baby-wombat-by-luna-ryan-and-ripple-bowl-by-scott-coleman.webp';
+import steelAposematismAndLichenByJoBone from './assets/steel_aposematism_and_lichen_by_jo_bone.webp';
+import tulipVaseByPeterNilssonAndUrbanVaseByKeithRoweAndRedMurriniBowlByBenEdolsLarge from './assets/tulip-vase-by-peter-nilsson-and-urban-vase-by-keith-rowe-and-red-murrini-bowl-by-ben-edols-large.webp';
+import tulipVaseByPeterNilssonAndUrbanVaseByKeithRoweAndRedMurriniBowlByBenEdols from './assets/tulip-vase-by-peter-nilsson-and-urban-vase-by-keith-rowe-and-red-murrini-bowl-by-ben-edols.webp';
+import blueHakeaSeedAndStamenBowlByJenniKemarreMartinielloLarge from './assets/blue-hakea-seed-and-stamen-bowl-by-jenni-kemarre-martiniello-large.webp';
+import blueHakeaSeedAndStamenBowlByJenniKemarreMartiniello from './assets/blue-hakea-seed-and-stamen-bowl-by-jenni-kemarre-martiniello.webp';
 
 export const SMALL_CAROUSEL_IMAGES = [
   {

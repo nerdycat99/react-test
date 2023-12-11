@@ -1,5 +1,5 @@
 import React from 'react';
-import australianGlassArtAndGiftsShopMosman from '../assets/australian-glass-art-and-gifts-shop-mosman.jpg';
+import australianGlassArtAndGiftsShopMosman from '../assets/australian-glass-art-and-gifts-shop-mosman.webp';
 import insta from '../assets/insta.png';
 import fb from '../assets/fb.png';
 import email from '../assets/email.png';
