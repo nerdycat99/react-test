@@ -35,7 +35,7 @@ export default function ContactPane() {
             <div className='column'>
               <div className='centered contact-text'>
                 <h3 className='contact-blocks-bottom-margin'>opening times</h3>
-                <p className='contact-blocks-top-margin'>{'Monday : Closed\nTuesday - Saturday : 10am - 5pm \nSunday : 10am - 4pm'}</p>
+                <p className='contact-blocks-top-margin'>{'Monday : Closed\nTuesday - Saturday : 10am - 5pm \nSunday : 11am - 4pm'}</p>
               </div>
             </div>
             <div className='column'>
