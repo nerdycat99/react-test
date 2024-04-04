@@ -18,7 +18,7 @@ export const SMALL_CAROUSEL_IMAGES = [
   {
     idx: 0,
     image: tulipVaseByPeterNilssonCrimpleVaseByMattCurtisEclipseVaseByHoglundArtGlass,
-    title: 'Tulip Vase by Peter Nilsson\nCrimple Vase by Matt Curtis\nEclipse Vase by Hoglund Art Glass',
+    title: 'We are now called Glassroom\nYou can find us at glassroom.com.au\nredirecting you in a few seconds...',
     description: 'Glass art work Tulip Vase by Peter Nilsson and glass art work Crimple Vase by Matt Curtis and glass art work Eclipse Vase by Hoglund Art Glass',
     darkText: 'false',
   },
@@ -77,7 +77,7 @@ export const CAROUSEL_IMAGES = [
   {
     idx: 0,
     image: tulipVaseByPeterNilssonCrimpleVaseByMattCurtisEclipseVaseByHoglundArtGlassLarge,
-    title: 'Tulip vase by Peter Nilsson\nCrimple Vase by Matt Curtis\nEclipse Vase by Hoglund Art Glass',
+    title: 'We are now called Glassroom\nYou can find us at glassroom.com.au\nredirecting you in a few seconds...',
     description: 'Glass art work Tulip Vase by Peter Nilsson and glass art work Crimple Vase by Matt Curtis and glass art work Eclipse Vase by Hoglund Art Glass',
     darkText: 'false',
   },

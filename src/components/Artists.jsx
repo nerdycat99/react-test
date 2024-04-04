@@ -6,6 +6,8 @@ export default function Artists() {
   return (
     <>
       <div className='some-page-wrapper'>
+      <h1 className="centered">We've changed our name to Glassroom</h1>
+      <h2 className="centered">You can now find us at <a href="https://www.glassroom.com.au">glassroom.com.au</a> or we'll redirect you in a second</h2>
         <div className='row'>
           <div className='column'>
             <div>

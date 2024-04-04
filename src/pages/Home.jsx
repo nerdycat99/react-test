@@ -1,8 +1,14 @@
+import { useEffect } from 'react'
 import Navbar from '../components/NavBar.jsx';
 import Carousel from '../components/Carousel.jsx';
 import {Helmet} from "react-helmet";
 
 export default function HomePage() {
+  useEffect(() => {
+    setTimeout(() => {
+      document.location.href = 'https://www.glassroom.com.au';
+    }, 20000)
+  }, [])
   return(
     <>
       <Helmet>

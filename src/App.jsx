@@ -1,4 +1,5 @@
 import Header from './components/Header.jsx';
+import React, { useEffect } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './pages/Home.jsx'
 import ProductPage from './pages/Products.jsx'

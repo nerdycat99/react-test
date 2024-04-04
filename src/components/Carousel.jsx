@@ -27,7 +27,7 @@ export default function Carousel() {
           {CAROUSEL_IMAGES.map((item) => {
             return <img src={item.image} key={item.idx} className={item.idx === currentItem ? 'slide' : 'slide slide-hidden'} alt={item.description} />
           })}
-          <p className={CAROUSEL_IMAGES[currentItem].darkText === 'true' ? 'slide-text slide-text-dark' : 'slide-text'}>{CAROUSEL_IMAGES[currentItem].title}</p>
+          <p className={CAROUSEL_IMAGES[currentItem].darkText === 'true' ? 'slide-text slide-text-dark' : 'slide-text'}>{CAROUSEL_IMAGES[0].title}</p>
         </div>
         <div className='small-carousel'>
           {SMALL_CAROUSEL_IMAGES.map((item) => {

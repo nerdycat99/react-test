@@ -1,8 +1,14 @@
+import { useEffect } from 'react'
 import Navbar from '../components/NavBar.jsx';
-import ContactPane from '../components/ContactPane.jsx';
+import Redirect from '../components/Redirect.jsx';
 import {Helmet} from "react-helmet";
 
 export default function Contacts() {
+  useEffect(() => {
+    setTimeout(() => {
+      document.location.href = 'https://www.glassroom.com.au';
+    }, 20000)
+  }, [])
   return(
     <>
       <Helmet>
@@ -36,7 +42,7 @@ export default function Contacts() {
         />
       </Helmet>
       <Navbar />
-      <ContactPane />
+      <Redirect />
     </>
   )
 }

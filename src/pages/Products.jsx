@@ -1,8 +1,14 @@
+import { useEffect } from 'react'
 import Navbar from '../components/NavBar.jsx';
-import Header from '../components/Header.jsx';
+import Redirect from '../components/Redirect.jsx';
 import {Helmet} from "react-helmet";
 
 export default function ProductPage() {
+  useEffect(() => {
+    setTimeout(() => {
+      document.location.href = 'https://www.glassroom.com.au';
+    }, 10000)
+  }, [])
   return(
     <>
       <Helmet>
@@ -38,8 +44,7 @@ export default function ProductPage() {
         />
       </Helmet>
       <Navbar />
-      <Header />
-      <h1 className="centered">coming soon...</h1>
+      <Redirect />
     </>
   )
 }
