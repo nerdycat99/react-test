@@ -5,9 +5,7 @@ import {Helmet} from "react-helmet";
 
 export default function Contacts() {
   useEffect(() => {
-    setTimeout(() => {
-      document.location.href = 'https://www.glassroom.com.au';
-    }, 20000)
+    document.location.href = 'https://www.glassroom.com.au', true;
   }, [])
   return(
     <>
