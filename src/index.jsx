@@ -6,19 +6,19 @@ import "./index.css";
 
 const entryPoint = document.getElementById("root");
 //Initialize GA4
-ReactGA.initialize("G-4SBJ4GDTJW");
+// ReactGA.initialize("G-4SBJ4GDTJW");
 ReactDOM.createRoot(entryPoint).render(
   <>
     <App />
   </>
 );
 
-const SendAnalytics = ()=> {
-  // console.log("it ran.......")
-  ReactGA.send({
-    hitType: "pageview",
-    page: window.location.pathname,
-  });
-}
+// const SendAnalytics = ()=> {
+//   // console.log("it ran.......")
+//   ReactGA.send({
+//     hitType: "pageview",
+//     page: window.location.pathname,
+//   });
+// }
 
-reportWebVitals(SendAnalytics);
+// reportWebVitals(SendAnalytics);
